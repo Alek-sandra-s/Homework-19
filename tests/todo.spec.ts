@@ -43,9 +43,7 @@ test.describe('Todo App tests', async () => {
     await todoPage.checkCompletedCount(2)
   })
 
-  test('TL-19-3 Test that "Toggle all" button marks all tasks as completed', async ({
-    page,
-  }) => {
+  test('TL-19-3 Test that "Toggle all" button marks all tasks as completed', async ({ page }) => {
     const todoPage = new TodoPage(page)
     await todoPage.open()
     await todoPage.createTask('Task 1')

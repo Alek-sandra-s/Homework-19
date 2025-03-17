@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "prettier:format": "prettier --write \"tests/**/*.{ts,tsx,js,jsx,json,css,md}\"",
-    "prettier:check": "prettier --check \"tests/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "prettier:format": "prettier --write .",
+    "prettier:check": "prettier --check .",
     "types:check": "npx tsc --noEmit",
-    "lint": "eslint tests",
+    "lint": "eslint .",
     "dev": "tsx src/index.ts",
     "test": "npx playwright test"
   },
